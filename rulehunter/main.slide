@@ -1,0 +1,171 @@
+Rulehunter
+Find Simple Rules in Your Data to Meet Your Goals
+15 Feb 2018
+
+Lawrence Woodman
+vLife Systems Ltd
+lwoodman@vlifesystems.com
+http://rulehunter.com
+
+
+* An Example to Set the Scene
+
+* A Call Center Working on Behalf of its Client
+
+.html css.html
+A call centre's client wants them to sell printer repair contracts
+
+The call centre and the client have competing priorities
+
+*The*client’s*requirements*
+
+- The ROI (Return On Investment) must be at least 15.0
+- At least 25% of contacts must result in a repair contract
+- They would like the total value of contracts to be as high as possible
+
+*The*call*centre’s*requirements*
+
+- The ROI for the call centre needs to be at least 1.10
+- The clients requirements must be met
+- Once the client's requirements are met the call centre would like an ROI of 1.30
+
+
+* What Can the Call Centre do to Balance These Priorities?
+
+The companies to call are split into segments
+
+*The*call*centre*can*adjust*the*following:*
+
+- Who calls which segment
+- Which quarter in the day each segment is called
+- How many callbacks are attempted for each segment
+
+
+* Use of Rulehunter
+
+The campaign needs to be called for a while to create a dataset
+
+The requirements of the call centre and its client are given to Rulehunter
+
+The variables that the call centre can adjust are also specified
+
+Rulehunter regularly and automatically processes the most up-to-date dataset
+
+
+
+* The Reports
+
+* Who Should Call Which Segment? - Dataset
+
+The data set contains 49 records, representing a callers performance for a segment.
+
+.html who_call_segment_dataset.html
+
+* Who Should Call Which Segment? - The Best Rule
+
+Rulehunter finds the following rule:
+
+  (in(name,"Fred Wilkins","Martha Stuart","Rebecca Davies") &&
+   in(segment,"a","c","f","g")) ||
+  (in(name,"Fred Wilkins","Mary Harris") || segment == "g")
+
+Callers: _Fred_Wilkins_, _Martha_Stuart_ and _Rebecca_Davies_ are best calling segments: _a_, _c_, _f_ and _g_
+
+Callers: _Fred_Wilkins_ and _Mary_Harris_ can call any segment
+
+Anyone can all segment: _g_
+
+* Who Should Call Which Segment? - The Result (Aggregators)
+
+.html who_call_segment_aggregators.html
+
+* Who Should Call Which Segment? - The Result (Goals)
+
+.html who_call_segment_goals.html
+
+
+
+* When to Call Each Segment? - Dataset
+
+The data set contained 5000 records, each representing a lead.
+
+.html when_call_segment_dataset.html
+
+* When to Call Each Segment? - The Best Rule
+
+Rulehunter finds the following rule:
+
+  (in(segment,"a","d","f","g") && quarter <= 2) ||
+  (in(segment,"b","c","e") && quarter >= 3)
+
+Call segments: _a_, _d_, _f_ and _g_ in quarters _1_ and _2_
+
+Call segments: _b_, _c_ and _e_ in quarters _3_ and _4_
+
+* When to Call Each Segment? - The Result (Aggregators)
+
+.html when_call_segment_aggregators.html
+
+* When to Call Each Segment? - The Result (Goals)
+
+.html when_call_segment_goals.html
+
+
+
+* How Many Callbacks be Attempted for Each Segment? - Dataset
+
+The data set contained 5000 records, each representing a lead.
+
+.html how_many_callbacks_segment_dataset.html
+
+
+* How Many Callbacks for Each Segment? - The Best Rule
+
+Rulehunter finds the following rule:
+
+  (callbacks <= 5 && in(segment,"a","d","f","g")) ||
+  (callbacks <= 9 && in(segment,"b","c","e"))
+
+Segments: _a_, _d_, _f_ and _g_ should have a maximum of _5_ callbacks
+Segments: _b_, _c_ and _e_ should have a maximum of _9_ callbacks
+
+* How Many Callbacks for Each Segment? - The Result (Aggregators)
+
+.html how_many_callbacks_segment_aggregators.html
+
+* How Many Callbacks for Each Segment? - The Result (Goals)
+
+.html how_many_callbacks_segment_goals.html
+
+
+* Overview
+Rulehunter finds simple rules in your data to meet your goals
+
+*You*
+
+- Provide Rulehunter with a dataset
+- Specify your objectives and priorities
+
+*Rulehunter*
+
+- Analyses the dataset
+- Finds the best rule to meet those requirements
+- Produces a report detailing how effective the rule is
+
+
+* Advantages
+
+- Simple
+- Transparent and Easily Understood
+- Reports accessible through web interface
+- Additional machine readable reports generated for more flexibility
+- Open source - It is absolutely free for personal or commercial use
+
+: Create reports that are clear and understandable to humans. We want to put humans in control.
+
+: This is even more important with the introduction of the GDPR
+
+
+* Support
+
+We can provide training and support
