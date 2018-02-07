@@ -72,7 +72,58 @@ The data set contains 5000 records, each representing a lead
 .html how_many_callbacks_segment_dataset.html
 
 
-.html how_many_callbacks_segment_dataset.html
+* An Experiment
+
+* Creating an Experiment
+
+Rulehunter uses files called _experiments_ to specify the user's needs
+
+You tell it which fields from the dataset you would like it to be able to use in the rules:
+
+  ruleGeneration:
+    fields:
+      - callbacks
+      - segment
+
+
+* Creating an Experiment - Variables
+
+An _experiment_ file contains variables that should be calculated
+
+  - name: "Total Call Centre Cost"
+    kind: "sum"
+    # £0.04/min call cost, plus £10/hr caller cost, plus £10/hr overheads
+    # Equal: (0.04/60) + (10/60/60) + (10/60/60) = £0.0062/second
+    arg: "callTime * 0.0062"
+
+  - name: "Total Client Commission"
+    kind: "calc"
+    # 5% commission on the value of all repair contracts
+    arg: "value * 0.05"
+
+  - name: "Conversion"
+    kind: "calc"
+    arg: "numSignups / totalContacts"
+
+* Creating an Experiment - Goals and Priorities
+
+Goals and priorities can be specified
+
+  goals:
+    - "Total Call Centre ROI >= 1.10"
+    - "Total Client ROI >= 15"
+    - "Conversion > 0.25"
+    - "Total Call Centre ROI >= 1.30"
+
+  sortOrder:
+    - aggregator: "Total Client Value"
+      direction: "descending"
+    - aggregator: "Total Call Centre ROI"
+      direction: "descending"
+
+
+
+* A Report
 
 
 * How Many Callbacks for Each Segment? - The Best Rule
