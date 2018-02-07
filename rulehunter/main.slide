@@ -63,13 +63,14 @@ The variables that the call centre can adjust are also specified
 Rulehunter regularly and automatically processes the most up-to-date dataset
 
 
+* A Dataset
 
-* A Report
+* How Many Callbacks for Each Segment?
 
+The data set contains 5000 records, each representing a lead
 
-* How Many Callbacks for Each Segment? - Dataset
+.html how_many_callbacks_segment_dataset.html
 
-The data set contained 5000 records, each representing a lead
 
 .html how_many_callbacks_segment_dataset.html
 
