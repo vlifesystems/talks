@@ -8,6 +8,14 @@ lwoodman@vlifesystems.com
 http://rulehunter.com
 
 
+* Rulehunter
+
+Rulehunter analyses historic data
+
+Provides recommendations to achieve your goals, such as improve ROI
+
+Balances compete priorities, such as a company's ROI vs its client's ROI
+
 * An Example to Set the Scene
 
 * A Call Center Working on Behalf of its Client
@@ -29,6 +37,7 @@ The call centre and the client have competing priorities
 - The clients requirements must be met
 - Once the client's requirements are met the call centre would like an ROI of 1.30
 
+: The call centre ROI has factored in the cost of the telephone calls, the callers' pay and additional overheads.
 
 * What Can the Call Centre do to Balance These Priorities?
 
@@ -37,8 +46,10 @@ The companies to call are split into segments
 *The*call*centre*can*adjust*the*following:*
 
 - Who calls which segment
+- Who calls each quarter
 - Which quarter in the day each segment is called
-- How many callbacks are attempted for each segment
+- How many callbacks are allowed by each caller
+- _How_many_callbacks_are_attempted_for_each_segment_
 
 
 * Use of Rulehunter
@@ -53,68 +64,12 @@ Rulehunter regularly and automatically processes the most up-to-date dataset
 
 
 
-* The Reports
-
-* Who Should Call Which Segment? - Dataset
-
-The data set contains 49 records, representing a callers performance for a segment.
-
-.html who_call_segment_dataset.html
-
-* Who Should Call Which Segment? - The Best Rule
-
-Rulehunter finds the following rule:
-
-  (in(name,"Fred Wilkins","Martha Stuart","Rebecca Davies") &&
-   in(segment,"a","c","f","g")) ||
-  (in(name,"Fred Wilkins","Mary Harris") || segment == "g")
-
-Callers: _Fred_Wilkins_, _Martha_Stuart_ and _Rebecca_Davies_ are best calling segments: _a_, _c_, _f_ and _g_
-
-Callers: _Fred_Wilkins_ and _Mary_Harris_ can call any segment
-
-Anyone can all segment: _g_
-
-* Who Should Call Which Segment? - The Result (Aggregators)
-
-.html who_call_segment_aggregators.html
-
-* Who Should Call Which Segment? - The Result (Goals)
-
-.html who_call_segment_goals.html
+* A Report
 
 
+* How Many Callbacks for Each Segment? - Dataset
 
-* When to Call Each Segment? - Dataset
-
-The data set contained 5000 records, each representing a lead.
-
-.html when_call_segment_dataset.html
-
-* When to Call Each Segment? - The Best Rule
-
-Rulehunter finds the following rule:
-
-  (in(segment,"a","d","f","g") && quarter <= 2) ||
-  (in(segment,"b","c","e") && quarter >= 3)
-
-Call segments: _a_, _d_, _f_ and _g_ in quarters _1_ and _2_
-
-Call segments: _b_, _c_ and _e_ in quarters _3_ and _4_
-
-* When to Call Each Segment? - The Result (Aggregators)
-
-.html when_call_segment_aggregators.html
-
-* When to Call Each Segment? - The Result (Goals)
-
-.html when_call_segment_goals.html
-
-
-
-* How Many Callbacks be Attempted for Each Segment? - Dataset
-
-The data set contained 5000 records, each representing a lead.
+The data set contained 5000 records, each representing a lead
 
 .html how_many_callbacks_segment_dataset.html
 
@@ -123,25 +78,51 @@ The data set contained 5000 records, each representing a lead.
 
 Rulehunter finds the following rule:
 
-  (callbacks <= 5 && in(segment,"a","d","f","g")) ||
-  (callbacks <= 9 && in(segment,"b","c","e"))
+  (in(segment,"a","d","f","g") && callbacks <= 5) ||
+  (in(segment,"b","c","e") && callbacks <= 9)
 
 Segments: _a_, _d_, _f_ and _g_ should have a maximum of _5_ callbacks
 Segments: _b_, _c_ and _e_ should have a maximum of _9_ callbacks
 
 * How Many Callbacks for Each Segment? - The Result (Aggregators)
 
+The report shows the difference between the use of the rule and without
+
 .html how_many_callbacks_segment_aggregators.html
 
 * How Many Callbacks for Each Segment? - The Result (Goals)
 
+With the rule the report shows that all the goals are met, without none are met
+
 .html how_many_callbacks_segment_goals.html
 
 
-* Overview
+* How Many Callbacks for Each Segment? - Analysis
+
+All the specified goals are met when the rule is used
+
+The call centre has gone from making a loss of £-11,059 to making a profit of £2,062
+
+.html how_many_callbacks_segment_profit_barchart.html
+
+* Advantages
+
+- Simple
+- Transparent and Easily Understood
+- Reports accessible through web interface
+- Additional machine readable reports generated for more flexibility
+- You host the software, so you stay in control of it and your data
+- Open source - It is absolutely free for personal or commercial use
+
+: Create reports that are clear and understandable to humans. We want to put humans in control.
+
+: This is even more important with the introduction of the GDPR
+
+
+* Summary
 Rulehunter finds simple rules in your data to meet your goals
 
-*You*
+*The*User*
 
 - Provide Rulehunter with a dataset
 - Specify your objectives and priorities
@@ -151,20 +132,6 @@ Rulehunter finds simple rules in your data to meet your goals
 - Analyses the dataset
 - Finds the best rule to meet those requirements
 - Produces a report detailing how effective the rule is
-
-
-* Advantages
-
-- Simple
-- Transparent and Easily Understood
-- Reports accessible through web interface
-- Additional machine readable reports generated for more flexibility
-- Open source - It is absolutely free for personal or commercial use
-
-: Create reports that are clear and understandable to humans. We want to put humans in control.
-
-: This is even more important with the introduction of the GDPR
-
 
 * Support
 
