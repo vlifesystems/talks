@@ -16,6 +16,8 @@ Provides recommendations to achieve your goals, such as to improve ROI
 
 Balances competing priorities, such as a company's ROI vs its client's ROI
 
+.image img/lightbulb.svg _ 300
+
 * An Example to Set the Scene
 
 * A Call Center Working on Behalf of its Client
@@ -62,6 +64,7 @@ The fields that can be used in the rule are also specified
 
 Rulehunter regularly and automatically processes the most up-to-date dataset
 
+.image img/cog.svg _ 200
 
 * A Dataset
 
@@ -85,6 +88,7 @@ You tell it which fields from the dataset you would like it to be able to use in
       - callbacks
       - segment
 
+.image img/book.svg _ 200
 
 * Creating an Experiment - Variables
 
@@ -136,6 +140,9 @@ Rulehunter finds the following rule:
 Segments: _a_, _d_, _f_ and _g_ should have a maximum of _5_ callbacks
 Segments: _b_, _c_ and _e_ should have a maximum of _9_ callbacks
 
+
+.image img/persongeneric.svg _ 200
+
 * How Many Callbacks for Each Segment? - The Result (Aggregators)
 
 The report shows the difference between the use of the rule and without
@@ -166,6 +173,8 @@ The call centre has gone from making a loss of Â£-11,059 to making a profit of Â
 - You host the software, so you stay in control of it and your data
 - Open source - It is absolutely free for personal or commercial use
 
+.image img/lamp.svg _ 200
+
 : Create reports that are clear and understandable to humans. We want to put humans in control.
 
 : This is even more important with the introduction of the GDPR
@@ -190,3 +199,7 @@ Rulehunter finds simple rules in your data to meet your goals
 Rulehunter was written by vLife Systems Ltd
 
 We can provide training and on-going support
+
+
+
+.image img/signaltower.svg _ 300
