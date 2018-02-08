@@ -118,8 +118,6 @@ Goals and priorities can be specified
   sortOrder:
     - aggregator: "Total Client Value"
       direction: "descending"
-    - aggregator: "Total Call Centre ROI"
-      direction: "descending"
 
 
 
