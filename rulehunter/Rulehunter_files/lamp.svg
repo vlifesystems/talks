@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg5332"
+   viewBox="0 0 256.00007 256.00002"
+   height="72.248894mm"
+   width="72.248909mm">
+  <title
+     id="title7133">Lamp</title>
+  <defs
+     id="defs5334" />
+  <metadata
+     id="metadata5337">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Lamp</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Josh &quot;Cheeseness&quot; Bush</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>Originally created for the official shirt for the 2014 Open Source Developers' Conference held at Griffith University.</dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>lamp light desklamp</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:date>2014-10-22</dc:date>
+        <dc:coverage></dc:coverage>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-362.5464,-406.21469)"
+     id="layer1">
+    <path
+       id="rect4814"
+       d="m 488.92669,406.22359 c -11.6052,0.1435 -22.1833,2.0187 -30.6385,6.4291 -9.3321,4.8678 -15.678,18.186 -13.5874,28.5015 2.0084,9.9097 7.7603,19.8737 15.637,29.4922 a 15.549897,15.549897 0 0 0 -0.6167,4.3172 15.549897,15.549897 0 0 0 1.7693,7.1956 c -29.7276,35.6528 -34.7418,74.0251 -31.5232,104.0448 2.2031,20.548 8.1584,37.3854 12.3601,47.2164 -3.2658,1.7789 -5.9527,4.6461 -7.4011,8.0613 l -56.5671,0 c -3.3728,0 -6.0866,2.7202 -6.0866,6.0929 l 0,8.5535 c 0,3.3728 2.7138,6.0866 6.0866,6.0866 l 141.8477,0 c 3.3728,0 6.0866,-2.7138 6.0866,-6.0866 l 0,-8.5535 c 0,-3.3727 -2.7138,-6.0929 -6.0866,-6.0929 l -56.5672,0 c -2.0314,-4.79 -6.4661,-8.6134 -11.5563,-9.6686 -3.8708,-8.5736 -10.3202,-25.3386 -12.6031,-46.6307 -3.004,-28.0182 1.2723,-63.0034 28.8505,-96.3197 a 15.549897,15.549897 0 0 0 6.9401,1.6507 15.549897,15.549897 0 0 0 3.9996,-0.5295 c 33.7689,29.7993 79.5491,52.4493 79.5491,52.4493 0,0 13.8547,-13.338 31.1057,-49.5088 17.251,-36.171 18.8952,-55.3334 18.8952,-55.3334 0,0 -69.6046,-31.9872 -119.8937,-31.3674 z"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+  </g>
+</svg>
