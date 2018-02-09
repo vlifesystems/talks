@@ -3,7 +3,6 @@ Images
 
 The following clipart is used:
 
-* [book.svg](https://openclipart.org/detail/275113/book)
 * [cog.svg](https://openclipart.org/detail/275103/cog)
 * [lamp.svg](https://openclipart.org/detail/275125/lamp)
 * [lightbulb.svg](https://openclipart.org/detail/275108/lightbulb)

@@ -18,4 +18,5 @@ Additional Licences
 These slides make use of additional software.  Please see the following for their licences.
 
 * [Chart.js](http://www.chartjs.org)
+* [microlight.js](http://asvd.github.io/microlight/)
 * [Go Present](https://godoc.org/golang.org/x/tools/present)

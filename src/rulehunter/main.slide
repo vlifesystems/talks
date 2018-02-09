@@ -18,11 +18,13 @@ Balances competing priorities, such as a company's ROI vs its client's ROI
 
 .image img/lightbulb.svg _ 300
 
+.html css.html
+.html scripts.html
+
 * An Example to Set the Scene
 
 * A Call Center Working on Behalf of its Client
 
-.html css.html
 A call centre's client wants them to sell printer repair contracts
 
 The call centre and the client have competing priorities
@@ -83,46 +85,19 @@ Rulehunter uses files called _experiments_ to specify the user's needs
 
 You tell it which fields from the dataset you would like it to be able to use in the rules:
 
-  ruleGeneration:
-    fields:
-      - callbacks
-      - segment
-
-.image img/book.svg _ 200
+.html rulegeneration_code.html
 
 * Creating an Experiment - Variables
 
 An _experiment_ file contains variables that should be calculated
 
-  - name: "Total Call Centre Cost"
-    kind: "sum"
-    # £0.04/min call cost, plus £10/hr caller cost, plus £10/hr overheads
-    # Equal: (0.04/60) + (10/60/60) + (10/60/60) = £0.0062/second
-    arg: "callTime * 0.0062"
-
-  - name: "Total Client Commission"
-    kind: "calc"
-    # 5% commission on the value of all repair contracts
-    arg: "value * 0.05"
-
-  - name: "Conversion"
-    kind: "calc"
-    arg: "numSignups / totalContacts"
+.html aggregators_code.html
 
 * Creating an Experiment - Goals and Priorities
 
 Goals and priorities can be specified
 
-  goals:
-    - "Total Call Centre ROI >= 1.10"
-    - "Total Client ROI >= 15"
-    - "Conversion > 0.25"
-    - "Total Call Centre ROI >= 1.30"
-
-  sortOrder:
-    - aggregator: "Total Client Value"
-      direction: "descending"
-
+.html goals_sortorder_code.html
 
 
 * A Report
