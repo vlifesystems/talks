@@ -18,8 +18,8 @@ Balances competing priorities, such as a company's ROI vs its client's ROI
 
 .image img/lightbulb.svg _ 300
 
-.html css.html
-.html scripts.html
+.html html/css.html
+.html html/scripts.html
 
 * An Example to Set the Scene
 
@@ -74,7 +74,7 @@ Rulehunter regularly and automatically processes the most up-to-date dataset
 
 The data set contains 5000 records, each representing a lead
 
-.html how_many_callbacks_segment_dataset.html
+.html html/how_many_callbacks_segment_dataset.html
 
 
 * An Experiment
@@ -85,19 +85,19 @@ Rulehunter uses files called _experiments_ to specify the user's needs
 
 You tell it which fields from the dataset you would like it to be able to use in the rules:
 
-.html rulegeneration_code.html
+.html html/rulegeneration_code.html
 
 * Creating an Experiment - Variables
 
 An _experiment_ file contains variables that should be calculated
 
-.html aggregators_code.html
+.html html/aggregators_code.html
 
 * Creating an Experiment - Goals and Priorities
 
 Goals and priorities can be specified
 
-.html goals_sortorder_code.html
+.html html/goals_sortorder_code.html
 
 
 * A Report
@@ -122,13 +122,13 @@ Segments: _b_, _c_ and _e_ should have a maximum of _9_ callbacks
 
 The report shows the difference between the use of the rule and without
 
-.html how_many_callbacks_segment_aggregators.html
+.html html/how_many_callbacks_segment_aggregators.html
 
 * How Many Callbacks for Each Segment? - The Result (Goals)
 
 With the rule the report shows that all the goals are met, without none are met
 
-.html how_many_callbacks_segment_goals.html
+.html html/how_many_callbacks_segment_goals.html
 
 
 * How Many Callbacks for Each Segment? - Analysis
@@ -137,7 +137,7 @@ The call centre and their client have all the specified goals met when the rule 
 
 The call centre has gone from making a loss of £-11,059 to making a profit of £2,062
 
-.html how_many_callbacks_segment_profit_barchart.html
+.html html/how_many_callbacks_segment_profit_barchart.html
 
 * Advantages
 
