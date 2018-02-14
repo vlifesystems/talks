@@ -181,10 +181,13 @@ We can provide training and on-going support
 
 * Further Examples
 
-There are a number of [[http://rulehunter.com/docs/examples/][examples]] on the Rulehunter website.  Here are a few:
+There are a number of [[http://rulehunter.com/docs/examples/][examples]] on the Rulehunter website.  Here are a few of them:
 
 *Breast*Cancer*Diagnosis*
 Doctors want to improve diagnosis and speed-up follow-up letters for patients with suspected breast cancer.  This uses a dataset created by the University of Wisconsin, USA and can be seen in a [[http://rulehunter.com/docs/examples/breast_cancer_diagnosis/][worked example]].
 
 *Steel*Plate*Fault*Detection*
 A quality control office wants to use machine learning to improve its detection of k scratch faults.  This uses a dataset created by Semeion, Research Center of Sciences of Communication, Italy and can be seen in a [[http://rulehunter.com/docs/examples/steel_plate_fault/][worked example]].
+
+*Bank*Term*Deposit*Subscription*
+A Portuguese bank wants to encourage customers to subscribe to a term deposit.  This uses a dataset related to a direct marketing campaign run by a Portuguese Bank.  The dataset is described by [Moro et al., 2014] and can be seen in a [[http://rulehunter.com/docs/examples/bank_subscribe_term_deposit/][worked example]].
