@@ -51,9 +51,9 @@ The companies to call are split into segments
 
 - Who calls which segment
 - Who calls each quarter
-- Which quarter in the day each segment is called
+- _Which_quarter_in_the_day_each_segment_is_called_
 - How many callbacks are allowed by each caller
-- _How_many_callbacks_are_attempted_for_each_segment_
+- How many callbacks are attempted for each segment
 
 
 * Use of Rulehunter
@@ -70,12 +70,11 @@ Rulehunter regularly and automatically processes the most up-to-date dataset
 
 * A Dataset
 
-* How Many Callbacks for Each Segment?
+* Who Should Call Which Segment?
 
-The data set contains 5000 records, each representing a lead
+The data set contains 49 records, each representing a caller's performance for a segment
 
-.html html/how_many_callbacks_segment_dataset.html
-
+.html html/who_should_call_which_segment_dataset.html
 
 * An Experiment
 
@@ -103,41 +102,43 @@ Goals and priorities can be specified
 * A Report
 
 
-* How Many Callbacks for Each Segment? - The Best Rule
+* Who Should Call Which Segment? - The Best Rule
 
 Rulehunter finds the following rule:
 
-  (in(segment,"a","d","f","g") && callbacks <= 5) ||
-  (in(segment,"b","c","e") && callbacks <= 9)
+  (in(name,"Fred Wilkins","Martha Stuart","Rebecca Davies") &&
+   in(segment,"a","c","f","g")) ||
+  (in(name,"Fred Wilkins","Mary Harris") || segment == "g")
 
 *Human*Explanation*
 
-Segments: _a_, _d_, _f_ and _g_ should have a maximum of _5_ callbacks
-Segments: _b_, _c_ and _e_ should have a maximum of _9_ callbacks
+- Callers: _Fred_Wilkins_, _Martha_Stuart_ and _Rebecca_Davies_ can call segments: _a_, _c_, _f_ and _g_
+- Callers: _Fred_Wilkins_ and _Mary_Harris_ can call any segment
+- Anyone can call segment: _g_
 
 
 .image img/persongeneric.svg _ 200
 
-* How Many Callbacks for Each Segment? - The Result (Aggregators)
+* Who Should Call Which Segment? - The Result (Aggregators)
 
 The report shows the difference between the use of the rule and without
 
-.html html/how_many_callbacks_segment_aggregators.html
+.html html/who_should_call_which_segment_aggregators.html
 
-* How Many Callbacks for Each Segment? - The Result (Goals)
+* Who Should Call Which Segment? - The Result (Goals)
 
 With the rule the report shows that all the goals are met, without none are met
 
-.html html/how_many_callbacks_segment_goals.html
+.html html/who_should_call_which_segment_goals.html
 
 
-* How Many Callbacks for Each Segment? - Analysis
+* Who Should Call Which Segment? - Analysis
 
 The call centre and their client have all the specified goals met when the rule is used
 
-The call centre has gone from making a loss of £-11,059 to making a profit of £2,062
+The call centre has gone from making a loss of £-31,954 to making a profit of £14,669
 
-.html html/how_many_callbacks_segment_profit_barchart.html
+.html html/who_should_call_which_segment_barchart.html
 
 * Finally
 
