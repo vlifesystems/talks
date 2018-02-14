@@ -7,7 +7,7 @@ These slides are for use with [Go Present](https://godoc.org/golang.org/x/tools/
 
 2018
 ------
-* [Rulehunter - Find Simple Rules in Your Data to Meet Your Goals](http://vlifesystems.com/talks/rulehunter/Rulehunter.html)
+* [Rulehunter - Find Simple Rules in Your Data to Meet Your Goals](http://vlifesystems.com/talks/rulehunter/)
 
 Licence
 -------
