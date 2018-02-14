@@ -21,7 +21,7 @@ Balances competing priorities, such as a company's ROI vs its client's ROI
 .html html/css.html
 .html html/scripts.html
 
-* An Example to Set the Scene
+* An Example to Illustrate
 
 * A Call Center Working on Behalf of its Client
 
@@ -139,6 +139,8 @@ The call centre has gone from making a loss of Â£-11,059 to making a profit of Â
 
 .html html/how_many_callbacks_segment_profit_barchart.html
 
+* Finally
+
 * Advantages
 
 - Simple
@@ -171,10 +173,18 @@ Rulehunter finds simple rules in your data to meet your goals
 
 * Support
 
-Rulehunter was written by vLife Systems Ltd
+Rulehunter was written by [[http://vlifesystems.com][vLife Systems Ltd]]
 
 We can provide training and on-going support
 
-
-
 .image img/signaltower.svg _ 300
+
+* Further Examples
+
+There are a number of [[http://rulehunter.com/docs/examples/][examples]] on the Rulehunter website.  Here are a few:
+
+*Breast*Cancer*Diagnosis*
+Doctors want to improve diagnosis and speed-up follow-up letters for patients with suspected breast cancer.  This uses a dataset created by the University of Wisconsin, USA and can be seen in a [[http://rulehunter.com/docs/examples/breast_cancer_diagnosis/][worked example]].
+
+*Steel*Plate*Fault*Detection*
+A quality control office wants to use machine learning to improve its detection of k scratch faults.  This uses a dataset created by Semeion, Research Center of Sciences of Communication, Italy and can be seen in a [[http://rulehunter.com/docs/examples/steel_plate_fault/][worked example]].
