@@ -49,9 +49,9 @@ The companies to call are split into segments
 
 *The*call*centre*can*adjust*the*following:*
 
-- Who calls which segment
+- _Who_calls_which_segment_
 - Who calls each quarter
-- _Which_quarter_in_the_day_each_segment_is_called_
+- Which quarter in the day each segment is called
 - How many callbacks are allowed by each caller
 - How many callbacks are attempted for each segment
 
